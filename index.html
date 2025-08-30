@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japan Student Living - Premium Student Apartments in Tokyo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <h2>Japan Student Living</h2>
+            </div>
+            <ul class="nav__menu" id="nav-menu">
+                <li><a href="#home" class="nav__link">Home</a></li>
+                <li><a href="#properties" class="nav__link">Properties</a></li>
+                <li><a href="#community" class="nav__link">Community</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+            <button class="btn btn--primary nav__cta">Find Your Apartment</button>
+            <button class="nav__toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero__content container">
+                <div class="hero__text">
+                    <h1 class="hero__title">Your Gateway to Premium Student Living in Japan</h1>
+                    <p class="hero__subtitle">12 years of experience providing fully furnished apartments to 800+ international students in Tokyo's most attractive districts</p>
+                </div>
+                <div class="hero__search">
+                    <form class="search-form">
+                        <div class="search-form__group">
+                            <label for="location">Location</label>
+                            <select id="location" name="location" class="form-control">
+                                <option value="">Select District</option>
+                                <option value="shibuya">Shibuya</option>
+                                <option value="shinjuku">Shinjuku</option>
+                                <option value="harajuku">Harajuku</option>
+                            </select>
+                        </div>
+                        <div class="search-form__group">
+                            <label for="budget">Budget</label>
+                            <select id="budget" name="budget" class="form-control">
+                                <option value="">Select Budget</option>
+                                <option value="70000-80000">¥70,000 - ¥80,000</option>
+                                <option value="80000-90000">¥80,000 - ¥90,000</option>
+                                <option value="90000-100000">¥90,000 - ¥100,000</option>
+                            </select>
+                        </div>
+                        <div class="search-form__group">
+                            <label for="room-type">Room Type</label>
+                            <select id="room-type" name="room-type" class="form-control">
+                                <option value="">Select Type</option>
+                                <option value="studio">Studio</option>
+                                <option value="1k">1K Apartment</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn--primary search-form__btn">Search Apartments</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services">
+            <div class="container">
+                <h2 class="section__title">Why Choose Japan Student Living</h2>
+                <div class="services__grid">
+                    <div class="service-card">
+                        <div class="service-card__icon">🏠</div>
+                        <h3 class="service-card__title">Fully Furnished Apartments</h3>
+                        <p class="service-card__description">Move in with just your suitcase. All essentials included.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card__icon">📍</div>
+                        <h3 class="service-card__title">Prime Locations</h3>
+                        <p class="service-card__description">Close to universities, transport, and city amenities.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card__icon">🌐</div>
+                        <h3 class="service-card__title">International Community</h3>
+                        <p class="service-card__description">Connect with 800+ students from around the world.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card__icon">📞</div>
+                        <h3 class="service-card__title">24/7 Support</h3>
+                        <p class="service-card__description">Multilingual support team available around the clock.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Properties -->
+        <section id="properties" class="properties">
+            <div class="container">
+                <h2 class="section__title">Featured Apartments</h2>
+                <div class="properties__grid">
+                    <div class="property-card">
+                        <div class="property-card__image">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1756561250/pplx_project_search_images/7e1ff46509e2bb0e690361e6b4839b7ee48fe78b.png" alt="Shibuya Premium Studio">
+                        </div>
+                        <div class="property-card__content">
+                            <h3 class="property-card__title">Shibuya Premium Studio</h3>
+                            <p class="property-card__location">Shibuya, Tokyo</p>
+                            <div class="property-card__price">¥85,000/month</div>
+                            <div class="property-card__details">
+                                <span class="property-detail">Studio • 25m²</span>
+                            </div>
+                            <div class="property-card__features">
+                                <span class="feature-tag">Fully Furnished</span>
+                                <span class="feature-tag">High-Speed WiFi</span>
+                                <span class="feature-tag">24/7 Security</span>
+                            </div>
+                            <div class="property-card__transport">🚇 2 min to Shibuya Station</div>
+                            <button class="btn btn--outline property-card__btn">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card">
+                        <div class="property-card__image">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1756561251/pplx_project_search_images/ec3c820caeabd8cc117e66f4eb559f5f73e98d61.png" alt="Shinjuku Student Loft">
+                        </div>
+                        <div class="property-card__content">
+                            <h3 class="property-card__title">Shinjuku Student Loft</h3>
+                            <p class="property-card__location">Shinjuku, Tokyo</p>
+                            <div class="property-card__price">¥95,000/month</div>
+                            <div class="property-card__details">
+                                <span class="property-detail">1K Apartment • 30m²</span>
+                            </div>
+                            <div class="property-card__features">
+                                <span class="feature-tag">Loft Design</span>
+                                <span class="feature-tag">Kitchen</span>
+                                <span class="feature-tag">Air Conditioning</span>
+                            </div>
+                            <div class="property-card__transport">🚇 5 min to Shinjuku Station</div>
+                            <button class="btn btn--outline property-card__btn">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="property-card">
+                        <div class="property-card__image">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1756561250/pplx_project_search_images/50262feece0f8b4f87a740d3e946f7d91cd15493.png" alt="Harajuku Cozy Room">
+                        </div>
+                        <div class="property-card__content">
+                            <h3 class="property-card__title">Harajuku Cozy Room</h3>
+                            <p class="property-card__location">Harajuku, Tokyo</p>
+                            <div class="property-card__price">¥78,000/month</div>
+                            <div class="property-card__details">
+                                <span class="property-detail">Studio • 22m²</span>
+                            </div>
+                            <div class="property-card__features">
+                                <span class="feature-tag">Designer Interior</span>
+                                <span class="feature-tag">Smart Home</span>
+                                <span class="feature-tag">Gym Access</span>
+                            </div>
+                            <div class="property-card__transport">🚇 3 min to Harajuku Station</div>
+                            <button class="btn btn--outline property-card__btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Districts Section -->
+        <section class="districts">
+            <div class="container">
+                <h2 class="section__title">Prime Locations Across Tokyo</h2>
+                <div class="districts__grid">
+                    <div class="district-card">
+                        <div class="district-card__image">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1756561250/pplx_project_search_images/88fcd4dd44b12c29ad0c9b9413014fc7a6f89c57.png" alt="Shibuya District">
+                        </div>
+                        <div class="district-card__content">
+                            <h3 class="district-card__title">Shibuya</h3>
+                            <p class="district-card__description">Vibrant entertainment district with excellent transport links</p>
+                            <div class="district-card__universities">
+                                <strong>Universities:</strong> Kokugakuin University, United Nations University
+                            </div>
+                            <div class="district-card__amenities">
+                                <span class="amenity-tag">Shopping</span>
+                                <span class="amenity-tag">Restaurants</span>
+                                <span class="amenity-tag">Nightlife</span>
+                                <span class="amenity-tag">Culture</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="district-card">
+                        <div class="district-card__image">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1756561250/pplx_project_search_images/90b7522ae46cf03ced90d050345921ab6bf4708d.png" alt="Shinjuku District">
+                        </div>
+                        <div class="district-card__content">
+                            <h3 class="district-card__title">Shinjuku</h3>
+                            <p class="district-card__description">Business and education hub with 24/7 energy</p>
+                            <div class="district-card__universities">
+                                <strong>Universities:</strong> Waseda University, Tokyo Medical University
+                            </div>
+                            <div class="district-card__amenities">
+                                <span class="amenity-tag">Transport Hub</span>
+                                <span class="amenity-tag">Shopping Malls</span>
+                                <span class="amenity-tag">Restaurants</span>
+                                <span class="amenity-tag">Government</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="district-card">
+                        <div class="district-card__image">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1756561250/pplx_project_search_images/aa895c3733f0ac9d2c2730cdbf92ec6b73682778.png" alt="Harajuku District">
+                        </div>
+                        <div class="district-card__content">
+                            <h3 class="district-card__title">Harajuku</h3>
+                            <p class="district-card__description">Youth culture center with unique fashion and dining</p>
+                            <div class="district-card__universities">
+                                <strong>Universities:</strong> Meiji University Campus, Language Schools
+                            </div>
+                            <div class="district-card__amenities">
+                                <span class="amenity-tag">Fashion</span>
+                                <span class="amenity-tag">Cafes</span>
+                                <span class="amenity-tag">Parks</span>
+                                <span class="amenity-tag">Art Galleries</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section id="community" class="community">
+            <div class="container">
+                <h2 class="section__title">Join the Insider Community</h2>
+                <div class="community__stats">
+                    <div class="stat-card">
+                        <div class="stat-card__number">800+</div>
+                        <div class="stat-card__label">International Students</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card__number">12</div>
+                        <div class="stat-card__label">Years of Excellence</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card__number">3</div>
+                        <div class="stat-card__label">Prime Districts</div>
+                    </div>
+                </div>
+                <p class="community__description">
+                    Connect with fellow international students in Tokyo's most vibrant districts. Our community offers networking events, cultural exchanges, and lifelong friendships.
+                </p>
+                <div class="testimonials">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__content">
+                            <div class="testimonial-card__stars">⭐⭐⭐⭐⭐</div>
+                            <p class="testimonial-card__text">"Found the perfect apartment in Shibuya through Japan Student Living. The community is amazing!"</p>
+                            <div class="testimonial-card__author">
+                                <strong>Sarah Chen</strong>
+                                <span>Singapore</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__content">
+                            <div class="testimonial-card__stars">⭐⭐⭐⭐⭐</div>
+                            <p class="testimonial-card__text">"Great service and beautiful apartments. Made my transition to Tokyo so smooth."</p>
+                            <div class="testimonial-card__author">
+                                <strong>Marcus Rodriguez</strong>
+                                <span>Spain</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about__content">
+                    <div class="about__text">
+                        <h2 class="section__title">About Japan Student Living</h2>
+                        <p>Since 2013, we have been dedicated to providing premium, fully furnished apartments to international students in Japan. Our mission is to make your transition to studying in Tokyo as smooth and comfortable as possible.</p>
+                        <p>With over 800 students in our community and 12 years of experience, we understand the unique needs of international students. From prime locations near universities to 24/7 multilingual support, we're here to ensure your Japanese adventure starts on the right foot.</p>
+                        <div class="about__highlights">
+                            <div class="highlight">
+                                <strong>Founded:</strong> 2013
+                            </div>
+                            <div class="highlight">
+                                <strong>Community:</strong> 800+ Students
+                            </div>
+                            <div class="highlight">
+                                <strong>Focus:</strong> International Student Housing
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section__title">Start Your Journey</h2>
+                <div class="contact__content">
+                    <div class="contact__form">
+                        <form class="inquiry-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="preferred-location" class="form-label">Preferred Location</label>
+                                <select id="preferred-location" name="preferred-location" class="form-control">
+                                    <option value="">Select District</option>
+                                    <option value="shibuya">Shibuya</option>
+                                    <option value="shinjuku">Shinjuku</option>
+                                    <option value="harajuku">Harajuku</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="move-in-date" class="form-label">Preferred Move-in Date</label>
+                                <input type="date" id="move-in-date" name="move-in-date" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" class="form-control" rows="4" placeholder="Tell us about your housing needs..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary btn--full-width">Send Inquiry</button>
+                        </form>
+                    </div>
+                    <div class="contact__info">
+                        <div class="contact-info-card">
+                            <h3>Contact Information</h3>
+                            <div class="contact-detail">
+                                <strong>Email:</strong> info@japanstudentliving.com
+                            </div>
+                            <div class="contact-detail">
+                                <strong>Phone:</strong> +81-3-1234-5678
+                            </div>
+                            <div class="contact-detail">
+                                <strong>Office Hours:</strong> 9:00 AM - 6:00 PM JST
+                            </div>
+                            <div class="contact-detail">
+                                <strong>Emergency:</strong> 24/7 Support Available
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <h3>Japan Student Living</h3>
+                    <p>Premium student accommodation in Tokyo since 2013</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#properties">Properties</a></li>
+                            <li><a href="#community">Community</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Furnished Apartments</a></li>
+                            <li><a href="#">Student Support</a></li>
+                            <li><a href="#">Property Management</a></li>
+                            <li><a href="#">Community Events</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="#" target="_blank">Facebook</a>
+                            <a href="#" target="_blank">Instagram</a>
+                            <a href="#" target="_blank">Twitter</a>
+                            <a href="#" target="_blank">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Japan Student Living. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
